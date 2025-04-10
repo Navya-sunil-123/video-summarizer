@@ -13,7 +13,7 @@ if not os.path.exists(model_path):
 model = Model(model_path)
 
 # Load audio file
-audio_path = r"C:\Users\nandh\Desktop\navya\mini project\audios\audio4.wav"
+audio_path = r"D:\navya\mini project\audios\audio2.wav"
 if not os.path.exists(audio_path):
     print(f"Audio file not found at {audio_path}.")
     exit()
@@ -44,7 +44,7 @@ result = json.loads(rec.FinalResult())
 transcript += result["text"]
 
 # Save the transcript to a text file
-transcript_file_path = r"C:\Users\nandh\Desktop\navya\mini project\transcripts\transcript4.txt"
+transcript_file_path = r"D:\navya\mini project\transcripts\transcript2.txt"
 with open(transcript_file_path, "w") as f:
     f.write(transcript)
 
