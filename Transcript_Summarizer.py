@@ -54,7 +54,7 @@ def generate_summary(text, top_n=3):
     return summary
 
 # Define transcript file path
-transcript_file_path = r"C:\Users\nandh\Desktop\navya\mini project\transcripts\transcript4.txt"
+transcript_file_path = r"D:navya\mini project\transcripts\transcript2.txt"
 
 # Read transcript
 transcript = read_transcript(transcript_file_path)
@@ -67,7 +67,7 @@ word_embeddings = {}  # Load your pre-trained word embeddings model here
 summary_sentences = generate_summary(transcript)
 
 # Save summary to a text file
-summary_file_path = r"C:\Users\nandh\Desktop\navya\mini project\summaries\summary4.txt"
+summary_file_path = r"D:\navya\mini project\summaries\summary2.txt"
 with open(summary_file_path, "w") as f:
     for sentence in summary_sentences:
         f.write(' '.join(sentence) + '\n')
